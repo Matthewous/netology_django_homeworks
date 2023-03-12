@@ -13,6 +13,17 @@ Content-Type: application/json
 
 ###
 
+# создание продукта
+POST {{baseUrl}}/products/
+Content-Type: application/json
+
+{
+  "title": "Яблоко",
+  "description": "Лучшие яблоки на рынке"
+}
+
+###
+
 # получение продуктов
 GET {{baseUrl}}/products/
 Content-Type: application/json
@@ -64,7 +75,7 @@ Content-Type: application/json
 ###
 
 # обновляем записи на складе
-PATCH {{baseUrl}}/stocks/4/
+PATCH {{baseUrl}}/stocks/1/
 Content-Type: application/json
 
 {
