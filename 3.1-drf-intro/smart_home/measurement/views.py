@@ -43,8 +43,8 @@ class ListCreateAPIView(ListAPIView):
     serializer_class = MeasurementSerializer
 
     def post(self, request):
-        review = MeasurementSerializer(data=request.data)
-        if review.is_valid():
-            review.save()
+        measure = MeasurementSerializer(data=request.data)
+        if measure.is_valid():
+            measure.save()
 
         return Response({'status': 'OK'})
